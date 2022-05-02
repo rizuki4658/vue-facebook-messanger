@@ -1,6 +1,6 @@
 {
   "name": "vue-facebook-messanger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Chat for your site business using facebook customer chat",
   "author": {
     "name": "Rizki Khair",
@@ -12,6 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/rizuki4658/vue-facebook-messanger"
   },
+  "keywords": [
+    "facebook chat",
+    "chat",
+    "vue"
+  ],
 
   "main": "dist/vue-facebook-messanger.ssr.js",
   "browser": "dist/vue-facebook-messanger.esm.js",
