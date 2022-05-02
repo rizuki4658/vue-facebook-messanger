@@ -1,7 +1,17 @@
 import { FacebookOptions } from './types'
 import { get, load } from './helpers'
 
-const VueFacebookMessanger = {
+const loadChat = (options: FacebookOptions) => {
+  get(options).then(() => {
+    if (options.page_id) {
+      load(options)
+    } else {
+      console.error('vue-facebook-messanger You must have to specify `page_id`')
+    }
+  })
+}
+
+const installChat = {
   install: (app: any, options: FacebookOptions) => {
     app.facebookMessanger = {
       setOptions(otherOptions: any) {
@@ -35,4 +45,8 @@ const VueFacebookMessanger = {
   }
 }
 
+const VueFacebookMessanger = {
+  loadChat,
+  installChat
+}
 export default VueFacebookMessanger

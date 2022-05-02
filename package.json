@@ -1,13 +1,23 @@
 {
   "name": "vue-facebook-messanger",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.4",
+  "description": "Chat for your site business using facebook customer chat",
+  "author": {
+    "name": "Rizki Khair",
+    "email": "rizkikhair4658@gmail.com",
+    "url": "https://rizkikhair.netlify.app"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizuki4658/vue-facebook-messanger"
+  },
 
   "main": "dist/vue-facebook-messanger.ssr.js",
   "browser": "dist/vue-facebook-messanger.esm.js",
   "module": "dist/vue-facebook-messanger.esm.js",
   "unpkg": "dist/vue-facebook-messanger.min.js",
-  "types": "dist/types/src/entry.esm.d.ts",
+  "types": "dist/types/src/index.d.ts",
 
   "files": [
     "dist/*",
@@ -21,8 +31,7 @@
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
-    "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts"
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
 
   "dependencies": {
